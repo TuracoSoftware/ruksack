@@ -1,3 +1,4 @@
+<!-- This home page will be replaced with a nice static product information page -- >
 @extends('layouts.app')
 
 @section('content')
