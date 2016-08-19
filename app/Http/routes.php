@@ -19,6 +19,11 @@ Route::auth();
 
 Route::get('home', 'HomeController@index');
 
+Route::group(['middleware' => 'web'], function () {
+  Route::resource('camp', 'CampController');
+  Route::resource('council', 'CouncilController');
+  Route::resource('troop', 'TroopController');
+});
 Route::group(['prefix' => 'administrator'], function(){
 
   Route::get('/', 'HomeController@index');

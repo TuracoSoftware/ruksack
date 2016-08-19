@@ -264,7 +264,13 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
     );
 
     public static $classMap = array (
+        'AddRememberNumberToCamp' => __DIR__ . '/../..' . '/database/migrations/2016_08_19_003435_add_remember_number_to_camp.php',
+        'AddRememberNumberToCouncil' => __DIR__ . '/../..' . '/database/migrations/2016_08_19_003417_add_remember_number_to_council.php',
+        'AddRememberNumberToTroop' => __DIR__ . '/../..' . '/database/migrations/2016_08_19_003429_add_remember_number_to_troop.php',
+        'AddRememberNumberToUsers' => __DIR__ . '/../..' . '/database/migrations/2016_08_19_003148_add_remember_number_to_users.php',
         'AddTypeToUsers' => __DIR__ . '/../..' . '/database/migrations/2016_08_18_002736_add_type_to_users.php',
+        'BoyScoutCamp' => __DIR__ . '/../..' . '/database/migrations/2016_08_18_235224_boy_scout_camp.php',
+        'Council' => __DIR__ . '/../..' . '/database/migrations/2016_08_18_233336_council.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
@@ -773,6 +779,7 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'Troop' => __DIR__ . '/../..' . '/database/migrations/2016_08_18_233341_troop.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

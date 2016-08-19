@@ -6,7 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddRememberNumberToCamp' => $baseDir . '/database/migrations/2016_08_19_003435_add_remember_number_to_camp.php',
+    'AddRememberNumberToCouncil' => $baseDir . '/database/migrations/2016_08_19_003417_add_remember_number_to_council.php',
+    'AddRememberNumberToTroop' => $baseDir . '/database/migrations/2016_08_19_003429_add_remember_number_to_troop.php',
+    'AddRememberNumberToUsers' => $baseDir . '/database/migrations/2016_08_19_003148_add_remember_number_to_users.php',
     'AddTypeToUsers' => $baseDir . '/database/migrations/2016_08_18_002736_add_type_to_users.php',
+    'BoyScoutCamp' => $baseDir . '/database/migrations/2016_08_18_235224_boy_scout_camp.php',
+    'Council' => $baseDir . '/database/migrations/2016_08_18_233336_council.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
@@ -515,4 +521,5 @@ return array(
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
+    'Troop' => $baseDir . '/database/migrations/2016_08_18_233341_troop.php',
 );
