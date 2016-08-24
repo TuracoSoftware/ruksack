@@ -13,4 +13,8 @@ class Council extends Model
   public function camp() {
     return $this->hasMany('App\Troop', 'camp_id');
   }
+
+  public function event() {
+    return $this->hasMany('App\Event', 'event_id');
+  }
 }
