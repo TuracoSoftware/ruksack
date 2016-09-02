@@ -23,6 +23,10 @@ Route::group(['middleware' => 'web'], function () {
   Route::resource('camp', 'CampController');
   Route::resource('council', 'CouncilController');
   Route::resource('troop', 'TroopController');
+
+  Route::get('new/council', function () {
+    return view('register.council');
+  });
 });
 
 Route::group(['prefix' => 'administrator'], function(){

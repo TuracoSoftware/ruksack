@@ -13,6 +13,7 @@ class TroopController extends Controller
   }
 
   public function index() {
+    return view(troop.home);
   }
 
   public function create() {

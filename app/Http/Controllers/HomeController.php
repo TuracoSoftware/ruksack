@@ -28,7 +28,9 @@ class HomeController extends Controller
     {
       if(Auth::user()->type == "admin"){
         return view('admin.home');
-      }else{
+      }elseif (Auth::user()->type == "troop" || Auth::user()->type == "scout master") {
+        return view('troop.home');
+      } else {
         return view('home');
       }
     }
