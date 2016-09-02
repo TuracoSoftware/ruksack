@@ -13,9 +13,9 @@ class MeritBadge extends Migration
     public function up()
     {
         Schema::create('merit_badges', function (Blueprint $table) {
-      $table->increments('id');
-      $table->string('name');
-      $table->string('path_name')->nullable();
+            $table->increments('id');
+            $table->string('name');
+            $table->string('path_name')->nullable();
     });
     }
 
