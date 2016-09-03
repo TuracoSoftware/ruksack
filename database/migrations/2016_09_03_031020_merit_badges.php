@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddRememberNumberToCouncil extends Migration
+class MeritBadges extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +12,11 @@ class AddRememberNumberToCouncil extends Migration
      */
     public function up()
     {
-      Schema::table('councils', function (Blueprint $table) {
-        $table->string('remember_number');
-      });
+      Schema::create('merit_badges', function (Blueprint $table) {
+          $table->increments('id');
+          $table->string('name');
+          $table->string('path_name')->nullable();
+  });
     }
 
     /**

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class MeritBadgeRequirements extends Migration
+class Userss extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +12,14 @@ class MeritBadgeRequirements extends Migration
      */
     public function up()
     {
-        Schema::create('requirements', function (Blueprint $table) {
+      Schema::create('users', function (Blueprint $table) {
       $table->increments('id');
-      $table->string('title_req');
-      $table->string('description');
-
-      $table->integer('meritB_id')->unsigned();
-      $table->foreign('meritB_id')->references('id')->on('merit_badges');
+      $table->string('name');
+      $table->string('email')->unique();
+      $table->string('password');
+      $table->string('remember_number')->nullable();
+      $table->rememberToken();
+      $table->timestamps();
     });
     }
 

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddRememberNumberToUsers extends Migration
+class Requirements extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +12,14 @@ class AddRememberNumberToUsers extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-          $table->string('remember_number');
-        });
+      Schema::create('requirements', function (Blueprint $table) {
+    $table->increments('id');
+    $table->string('title_req');
+    $table->string('description');
+
+    $table->integer('meritB_id')->unsigned();
+    $table->foreign('meritB_id')->references('id')->on('merit_badges');
+  });
     }
 
     /**
