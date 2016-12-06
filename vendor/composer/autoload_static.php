@@ -23,6 +23,10 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'Z' => 
+        array (
+            'Zizaco\\Entrust\\' => 15,
+        ),
         'X' => 
         array (
             'XdgBaseDir\\' => 11,
@@ -55,6 +59,7 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
         'P' => 
         array (
             'Psy\\' => 4,
+            'Psr\\Log\\' => 8,
             'PhpParser\\' => 10,
         ),
         'M' => 
@@ -96,6 +101,10 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+        ),
+        'Zizaco\\Entrust\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -181,6 +190,10 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
         array (
             0 => __DIR__ . '/..' . '/psy/psysh/src/Psy',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -230,10 +243,6 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
     public static $prefixesPsr0 = array (
         'P' => 
         array (
-            'Psr\\Log\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/psr/log',
-            ),
             'Prophecy\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
@@ -276,7 +285,6 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
     public static $classMap = array (
         'Absolute_Positioner' => __DIR__ . '/..' . '/dompdf/dompdf/include/absolute_positioner.cls.php',
         'Abstract_Renderer' => __DIR__ . '/..' . '/dompdf/dompdf/include/abstract_renderer.cls.php',
-        'AddTypeToUsers' => __DIR__ . '/../..' . '/database/migrations/2016_09_03_030354_add_type_to_users.php',
         'Adobe_Font_Metrics' => __DIR__ . '/..' . '/phenx/php-font-lib/classes/Adobe_Font_Metrics.php',
         'Attribute_Translator' => __DIR__ . '/..' . '/dompdf/dompdf/include/attribute_translator.cls.php',
         'Block_Frame_Decorator' => __DIR__ . '/..' . '/dompdf/dompdf/include/block_frame_decorator.cls.php',
@@ -286,16 +294,15 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
         'CPDF_Adapter' => __DIR__ . '/..' . '/dompdf/dompdf/include/cpdf_adapter.cls.php',
         'CSS_Color' => __DIR__ . '/..' . '/dompdf/dompdf/include/css_color.cls.php',
         'Cached_PDF_Decorator' => __DIR__ . '/..' . '/dompdf/dompdf/include/cached_pdf_decorator.cls.php',
-        'Camps' => __DIR__ . '/../..' . '/database/migrations/2016_09_03_030730_camps.php',
         'Canvas' => __DIR__ . '/..' . '/dompdf/dompdf/include/canvas.cls.php',
         'Canvas_Factory' => __DIR__ . '/..' . '/dompdf/dompdf/include/canvas_factory.cls.php',
         'Cellmap' => __DIR__ . '/..' . '/dompdf/dompdf/include/cellmap.cls.php',
-        'Councils' => __DIR__ . '/../..' . '/database/migrations/2016_09_03_030428_councils.php',
         'DOMPDF' => __DIR__ . '/..' . '/dompdf/dompdf/include/dompdf.cls.php',
         'DOMPDF_Exception' => __DIR__ . '/..' . '/dompdf/dompdf/include/dompdf_exception.cls.php',
         'DOMPDF_Image_Exception' => __DIR__ . '/..' . '/dompdf/dompdf/include/dompdf_image_exception.cls.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'Encoding_Map' => __DIR__ . '/..' . '/phenx/php-font-lib/classes/Encoding_Map.php',
+        'EntrustSetupTables' => __DIR__ . '/../..' . '/database/migrations/2016_10_26_012920_entrust_setup_tables.php',
         'Eventss' => __DIR__ . '/../..' . '/database/migrations/2016_09_03_030946_eventss.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
@@ -428,10 +435,12 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
         'List_Bullet_Image_Frame_Decorator' => __DIR__ . '/..' . '/dompdf/dompdf/include/list_bullet_image_frame_decorator.cls.php',
         'List_Bullet_Positioner' => __DIR__ . '/..' . '/dompdf/dompdf/include/list_bullet_positioner.cls.php',
         'List_Bullet_Renderer' => __DIR__ . '/..' . '/dompdf/dompdf/include/list_bullet_renderer.cls.php',
+        'Locations' => __DIR__ . '/../..' . '/database/migrations/2016_09_03_030730_locations.php',
         'MeritBadges' => __DIR__ . '/../..' . '/database/migrations/2016_09_03_031020_merit_badges.php',
         'Null_Frame_Decorator' => __DIR__ . '/..' . '/dompdf/dompdf/include/null_frame_decorator.cls.php',
         'Null_Frame_Reflower' => __DIR__ . '/..' . '/dompdf/dompdf/include/null_frame_reflower.cls.php',
         'Null_Positioner' => __DIR__ . '/..' . '/dompdf/dompdf/include/null_positioner.cls.php',
+        'Organizations' => __DIR__ . '/../..' . '/database/migrations/2016_09_03_030428_organizations.php',
         'PDFLib_Adapter' => __DIR__ . '/..' . '/dompdf/dompdf/include/pdflib_adapter.cls.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
@@ -875,6 +884,7 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'Style' => __DIR__ . '/..' . '/dompdf/dompdf/include/style.cls.php',
         'Stylesheet' => __DIR__ . '/..' . '/dompdf/dompdf/include/stylesheet.cls.php',
+        'Subscription' => __DIR__ . '/../..' . '/database/migrations/2016_10_24_232622_subscription.php',
         'TCPDF_Adapter' => __DIR__ . '/..' . '/dompdf/dompdf/include/tcpdf_adapter.cls.php',
         'Table_Cell_Frame_Decorator' => __DIR__ . '/..' . '/dompdf/dompdf/include/table_cell_frame_decorator.cls.php',
         'Table_Cell_Frame_Reflower' => __DIR__ . '/..' . '/dompdf/dompdf/include/table_cell_frame_reflower.cls.php',
@@ -893,8 +903,13 @@ class ComposerStaticInitfd3414514a0a3134734b0a779b48d6dd
         'Text_Frame_Reflower' => __DIR__ . '/..' . '/dompdf/dompdf/include/text_frame_reflower.cls.php',
         'Text_Renderer' => __DIR__ . '/..' . '/dompdf/dompdf/include/text_renderer.cls.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
-        'Troops' => __DIR__ . '/../..' . '/database/migrations/2016_09_03_030610_troops.php',
+        'TimeSlotEvents' => __DIR__ . '/../..' . '/database/migrations/2016_10_25_010959_time_slot_events.php',
+        'TimeSlots' => __DIR__ . '/../..' . '/database/migrations/2016_10_25_005419_time_slots.php',
+        'Units' => __DIR__ . '/../..' . '/database/migrations/2016_09_03_030610_units.php',
+        'UserOrganization' => __DIR__ . '/../..' . '/database/migrations/2016_10_25_004917_user_organization.php',
+        'UserTroop' => __DIR__ . '/../..' . '/database/migrations/2016_10_25_004604_user_troop.php',
         'Userss' => __DIR__ . '/../..' . '/database/migrations/2016_09_03_030134_userss.php',
+        'Zizaco\\Entrust\\MigrationCommand' => __DIR__ . '/..' . '/zizaco/entrust/src/commands/MigrationCommand.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

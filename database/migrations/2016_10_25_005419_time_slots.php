@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddTypeToUsers extends Migration
+class TimeSlots extends Migration
 {
     /**
      * Run the migrations.
@@ -12,8 +12,10 @@ class AddTypeToUsers extends Migration
      */
     public function up()
     {
-      Schema::table('users', function (Blueprint $table) {
-        $table->string('type')->nullable();
+      Schema::create('time_slots', function (Blueprint $table) {
+        $table->increments('id');
+        $table->string('title');
+        $table->time('time');
       });
     }
 
@@ -24,6 +26,6 @@ class AddTypeToUsers extends Migration
      */
     public function down()
     {
-        //
+      Schema::drop('time_slots');
     }
 }

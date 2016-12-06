@@ -27,10 +27,19 @@ Route::group(['middleware' => 'web'], function () {
   Route::get('new/council', function () {
     return view('register.council');
   });
+
+  Route::post('neworganization', 'Auth\NewOrganization@store');
 });
+/*
+| cname is the organizations name
+|
+*/
+Route::group(['domain' => '{{cname}}.ruksack.com'], function() {
+  Route::group(['namespace' => 'Admin'], function() {
+    Route::group(['namespace' => 'Admin'], function() {
 
-Route::group(['prefix' => 'administrator'], function(){
-
+    });
+  });
   Route::get('/', 'HomeController@index');
 
 });

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Councils extends Migration
+class Locations extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class Councils extends Migration
      */
     public function up()
     {
-      Schema::create('councils', function (Blueprint $table) {
+      Schema::create('locations', function (Blueprint $table) {
         $table->increments('id');
         $table->string('name');
         $table->string('phone_number');
@@ -20,9 +20,10 @@ class Councils extends Migration
         $table->string('city');
         $table->string('state');
         $table->integer('zip');
-        $table->string('permissions');
         $table->string('remember_number')->nullable();
-        $table->timestamps();
+
+        $table->unsignedInteger('organization_id')->nullable();
+        $table->foreign('organization_id')->references('id')->on('organizations');
       });
     }
 
@@ -33,6 +34,6 @@ class Councils extends Migration
      */
     public function down()
     {
-        //
+      Schema::drop('locations');
     }
 }

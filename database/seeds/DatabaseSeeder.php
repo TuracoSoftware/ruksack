@@ -11,6 +11,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+      DB::table('roles')->insert([
+        'name' => 'super',
+        'display_name' =>  'Project Developer',
+        'description' => 'User sees all'
+      ]);
+      DB::table('roles')->insert([
+        'name' => 'admin',
+        'display_name' =>  'Administrator',
+        'description' => 'General Organization & Location admin'
+      ]);
+      DB::table('roles')->insert([
+        'name' => 'unit',
+        'display_name' =>  'Unit',
+        'description' => 'A unit is the end user who is registering for things'
+      ]);
     }
 }

@@ -13,13 +13,13 @@ class Requirements extends Migration
     public function up()
     {
       Schema::create('requirements', function (Blueprint $table) {
-    $table->increments('id');
-    $table->string('title_req');
-    $table->string('description');
+        $table->increments('id');
+        $table->string('title_req');
+        $table->string('description');
 
-    $table->integer('meritB_id')->unsigned();
-    $table->foreign('meritB_id')->references('id')->on('merit_badges');
-  });
+        $table->integer('meritB_id')->unsigned();
+        $table->foreign('meritB_id')->references('id')->on('merit_badges');
+      });
     }
 
     /**
@@ -29,6 +29,6 @@ class Requirements extends Migration
      */
     public function down()
     {
-        //
+      Schema::drop('requirements');
     }
 }

@@ -27,7 +27,7 @@ class HomeController extends Controller
     public function index()
     {
       if(Auth::user()->type == "admin"){
-        return view('admin.home');
+        return redirect('admin');
       }elseif (Auth::user()->type == "troop" || Auth::user()->type == "scout master") {
         return view('troop.home');
       } else {

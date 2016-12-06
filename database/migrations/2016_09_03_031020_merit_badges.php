@@ -16,7 +16,7 @@ class MeritBadges extends Migration
           $table->increments('id');
           $table->string('name');
           $table->string('path_name')->nullable();
-  });
+      });
     }
 
     /**
@@ -26,6 +26,6 @@ class MeritBadges extends Migration
      */
     public function down()
     {
-        //
+      Schema::drop('merit_badges');
     }
 }

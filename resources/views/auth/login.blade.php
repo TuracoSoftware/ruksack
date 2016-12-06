@@ -26,7 +26,7 @@
   </head>
   <body class="hold-transition login-page">
     <div class="login-box">
-      <div class="login-logo"><a href="../../index2.html"><strong>\cname</strong></a></div><!-- /.login-logo -->
+      <div class="login-logo"><a href="../../index2.html"><strong>Login</strong></a></div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
         <form action="{{ url('/login') }}" method="post">
@@ -41,11 +41,11 @@
                 </span>
             @endif
           </div>
-          
+
           <div class="form-group has-feedback{{ $errors->has('password') ? ' has-error' : '' }}">
             <input type="password" class="form-control" placeholder="Password" name="password">
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-            @if ($errors->has('password'))                           
+            @if ($errors->has('password'))
                 <span class="help-block">
                     <strong>{{ $errors->first('password') }}</strong>
                 </span>
@@ -90,4 +90,3 @@
     </script>
   </body>
 </html>
-

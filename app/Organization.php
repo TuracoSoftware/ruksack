@@ -4,8 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Council extends Model
+class Organization extends Model
 {
+  public function user() {
+    return $this->belongsToMany('App\User');
+  }
   public function troop() {
     return $this->hasMany('App\Troop', 'troop_id');
   }
